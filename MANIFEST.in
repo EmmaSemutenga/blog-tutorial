@@ -1,0 +1,4 @@
+include mimi/schema.sql
+graft mimi/static
+graft mimi/templates
+global-exclude *.pyc
