@@ -36,4 +36,9 @@ def create_app(test_config=None):#application factory function
     from . import auth
     app.register_blueprint(auth.bp)
 
+    #import and blog the blueprint
+    from . import blog
+    app.register_blueprint(blog.bp)
+    app.add_url_rule('/', endpoint = 'index')
+
     return app
